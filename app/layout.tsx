@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   // metadataBase to find Next.js OG Image
-  metadataBase: new URL("https://pyuscript.vercel.app"),
+  metadataBase: new URL("https://pyu-script.vercel.app"),
   title: "PyuScript Vault | UCS Pyay",
   description:
     "Built for convenience. UCS Pyay ကျောင်းသားများရဲ့ Project လေးများကို တစ်စုတစ်စည်းတည်း အလွယ်တကူ ရှာဖွေ၊ မျှဝေ၊ မှတ်တမ်းတင်နိုင်မယ့် ဒစ်ဂျစ်တယ်ကျောက်စာတိုင်လေး။",
