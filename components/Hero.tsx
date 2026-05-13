@@ -1,6 +1,7 @@
 "use client";
 
 import { account } from "@/lib/appwrite.client";
+import { adminTelegramAccount } from "@/utils/infoContact";
 import { useState } from "react";
 
 export default function Hero() {
@@ -68,7 +69,7 @@ export default function Hero() {
           <p className="text-sm text-base-content/60 flex items-center gap-2">
             Need an invite code?{" "}
             <a
-              href="https://t.me/your_ucs_group"
+              href={`https://t.me/${adminTelegramAccount}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:underline transition-colors flex items-center gap-1 font-semibold"

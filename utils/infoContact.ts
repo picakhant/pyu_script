@@ -1,0 +1,1 @@
+export const adminTelegramAccount = "aster_julian_ray";
