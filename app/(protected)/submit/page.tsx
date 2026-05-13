@@ -10,10 +10,10 @@ export default function SubmitPage() {
 
         {/* Banner Text Overlay */}
         <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-12 z-10">
-          <h1 className="text-3xl md:text-5xl font-black text-base-content tracking-tight">
+          <h1 className="text-xl md:text-4xl font-black text-base-content tracking-tight">
             Initialize Project
           </h1>
-          <p className="text-base-content/60 mt-2 max-w-lg">
+          <p className="text-base-content/60 md:text-lg text-sm mt-1 max-w-lg">
             Submit your GitHub repository. Our system will automatically extract
             your title, tech stack, and description.
           </p>
@@ -28,7 +28,7 @@ export default function SubmitPage() {
             <h3 className="text-lg font-bold text-base-content">
               Zero Friction Submit
             </h3>
-            <p className="text-sm text-base-content/60 leading-relaxed mt-2">
+            <p className="text-base-content/60 leading-relaxed mt-2">
               Just paste your public GitHub repository link. We use the GitHub
               API to read your project's name, description, and the programming
               languages you used.

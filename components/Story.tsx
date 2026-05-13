@@ -1,12 +1,17 @@
 export default function Story() {
   return (
-    <section className="relative py-24 sm:py-32 px-4 overflow-hidden">
-      {/* Subtle Background Glow to match Hero */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-100 bg-primary/5 blur-[120px] rounded-full pointer-events-none z-0"></div>
+    <section className="relative py-16 sm:py-32 px-4 overflow-hidden">
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] max-w-3xl pointer-events-none z-0 opacity-20"
+        style={{
+          background:
+            "radial-gradient(circle, var(--color-primary) 0%, transparent 60%)",
+        }}
+      ></div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
         {/* Tech-styled Header */}
-        <div className="flex flex-col items-center mb-12 animate-fade-in-up">
+        <div className="flex flex-col items-center mb-10 sm:mb-12 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-base-200/80 border border-base-content/10 text-xs font-mono text-base-content/60 mb-4">
             <span className="text-primary">#</span> our-history.md
           </div>
@@ -15,15 +20,13 @@ export default function Story() {
           </h2>
         </div>
 
-        {/* Premium Glassmorphism Card */}
-        <div className="relative bg-base-200/40 backdrop-blur-xl rounded-3xl border border-base-content/10 p-6 sm:p-12 shadow-2xl animate-fade-in-up delay-200">
+        <div className="relative bg-base-200/80 sm:bg-base-200/40 sm:backdrop-blur-xl rounded-3xl border border-base-content/10 p-6 sm:p-12 shadow-xl sm:shadow-2xl animate-fade-in-up delay-200">
           {/* Git-style Timeline / Vertical Line */}
-          <div className="absolute left-9.75 sm:left-16.75 top-16 bottom-16 w-0.5 bg-linear-to-b from-base-content/20 via-primary/50 to-base-content/20 hidden sm:block"></div>
+          <div className="absolute left-16.75 top-16 bottom-16 w-0.5 bg-linear-to-b from-base-content/20 via-primary/50 to-base-content/20 hidden sm:block"></div>
 
-          <div className="space-y-10 sm:space-y-12 text-base sm:text-lg opacity-90 leading-relaxed text-justify sm:text-left">
+          <div className="space-y-8 sm:space-y-12 text-base sm:text-lg opacity-90 leading-relaxed text-justify sm:text-left">
             {/* 1. The Ancient Root */}
             <div className="relative pl-0 sm:pl-16">
-              {/* Timeline Dot */}
               <div className="absolute -left-6 top-1.5 w-4 h-4 rounded-full bg-base-200 border-2 border-base-content/30 hidden sm:block"></div>
               <p>
                 ရှေးနှစ်ပေါင်းများစွာက သရေခေတ္တရာ (ပြည်) မြို့ဟောင်းမှာ
@@ -37,7 +40,6 @@ export default function Story() {
 
             {/* 2. The Modern Tech */}
             <div className="relative pl-0 sm:pl-16">
-              {/* Timeline Dot */}
               <div className="absolute -left-6 top-1.5 w-4 h-4 rounded-full bg-base-200 border-2 border-primary/60 hidden sm:block"></div>
               <p>
                 ယနေ့ခေတ်မှာတော့ UCS Pyay က နည်းပညာကျောင်းသားတွေဟာ Web ပေါ်မှာ{" "}
@@ -48,10 +50,10 @@ export default function Story() {
               </p>
             </div>
 
-            {/*  3. The Bridge (Conclusion) - Toned down & Friendly Vibe  */}
+            {/* 3. The Bridge (Conclusion) */}
             <div className="relative pl-0 sm:pl-16">
-              {/* Timeline Glow Dot */}
-              <div className="absolute -left-7 top-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center sm:flex">
+              {/* LAYOUT FIX: Changed to `hidden sm:flex` so it doesn't overflow the screen on mobile */}
+              <div className="absolute -left-7 top-0 w-6 h-6 rounded-full bg-primary/20 hidden sm:flex items-center justify-center">
                 <div className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></div>
               </div>
               <p>

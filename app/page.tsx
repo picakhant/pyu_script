@@ -5,18 +5,19 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-base-content flex flex-col relative overflow-hidden">
-      {/* Main Content Wrapper */}
-      <div className="relative z-10 w-full flex flex-col grow">
-        <Navbar />
+    <>
+      <Navbar />
+      <main className="min-h-screen text-base-content flex flex-col relative overflow-hidden">
+        {/* Main Content Wrapper */}
+        <div className="relative z-10 w-full flex flex-col grow">
+          <div className="grow overflow-x-hidden w-full flex flex-col">
+            <Hero />
+            <Story />
+          </div>
 
-        <div className="grow overflow-x-hidden w-full flex flex-col">
-          <Hero />
-          <Story />
+          <Footer />
         </div>
-
-        <Footer />
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

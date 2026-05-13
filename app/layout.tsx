@@ -44,19 +44,17 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="night" lang="en" className={` h-full antialiased`}>
-      <body className="min-h-full relative flex flex-col">
+      <body className="min-h-full relative">
         {/* 🌟 Modern Dotted Pattern Background (Next.js/Vercel Style) */}
         <div
-          className="absolute inset-0 z-0 opacity-20 pointer-events-none"
+          className="hidden md:block fixed inset-0 z-[-1] opacity-20 pointer-events-none"
           style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, currentColor 1.5px, transparent 0)`,
-
-            backgroundSize: "48px 48px",
-
+            backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
+            backgroundSize: "60px 60px",
             maskImage:
-              "radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%)",
+              "radial-gradient(ellipse 80% 80% at 50% 50%, black 10%, transparent 100%)",
             WebkitMaskImage:
-              "radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 100%)",
+              "radial-gradient(ellipse 80% 80% at 50% 50%, black 10%, transparent 100%)",
           }}
         ></div>
         <ToastProvider />

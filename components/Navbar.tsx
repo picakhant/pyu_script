@@ -4,7 +4,7 @@ import NavBarOauthBtn from "./NavBarOauthBtn";
 
 export default function Navbar() {
   return (
-    <div className=" bg-base-100/80 backdrop-blur-md sticky top-0 z-50 border-b border-base-content/10 font-mono">
+    <div className="bg-base-100/95 md:bg-base-100/80 md:backdrop-blur-md sticky top-0 z-50 border-b border-base-content/10 font-mono transition-colors duration-300">
       <div className="container navbar mx-auto">
         <div className="flex-1">
           <Link href="/" className=" flex items-center gap-2">
