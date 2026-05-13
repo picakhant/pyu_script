@@ -1,3 +1,4 @@
+import { adminTelegramAccount } from "@/utils/infoContact";
 import Link from "next/link";
 
 export default function UnauthorizedPage() {
@@ -100,7 +101,7 @@ export default function UnauthorizedPage() {
           {/* Action Buttons: Stacked on mobile, side-by-side on larger screens */}
           <div className="flex flex-row gap-4 pt-2">
             <a
-              href="https://t.me/your_telegram_username"
+              href={`https://t.me/${adminTelegramAccount}`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary w-1/2 md:btn-lg font-bold rounded-full shadow-[0_0_20px_rgba(var(--p),0.2)] hover:scale-[1.02] transition-transform"
