@@ -30,7 +30,7 @@ export default async function EditPage({
   }
 
   return (
-    <div className="max-w-3xl mx-auto py-8 sm:py-12 px-4 sm:px-6 overflow-hidden">
+    <div className="max-w-3xl mx-auto py-8 sm:py-12 px-2 overflow-hidden">
       <div className="mb-8 sm:mb-10 text-center">
         <h1 className="text-2xl sm:text-3xl font-black text-base-content tracking-tight flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
           <svg

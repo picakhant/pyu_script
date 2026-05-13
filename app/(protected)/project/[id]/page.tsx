@@ -142,7 +142,7 @@ export default async function ProjectDetailPage({
       </div>
 
       {/* 3. Documentation Section (Clean & Focused) */}
-      <main className="max-w-5xl mx-auto px-6 md:px-12 mt-16">
+      <main className="lg:px-10 mx-auto mt-16">
         {readmeContent ? (
           <article
             className="prose max-w-none prose-base-content 

@@ -66,12 +66,12 @@ export default function EditForm({ project }: EditFormProps) {
           type="url"
           required
           placeholder="https://github.com/username/project-name"
-          className="input input-bordered w-full bg-base-100/50 focus:bg-base-100 focus:border-primary transition-all font-mono text-sm shadow-sm rounded-xl"
+          className="input input-primary input-lg w-full"
           value={repoUrl}
           onChange={(e) => setRepoUrl(e.target.value)}
         />
         <label className="label px-0">
-          <span className="label-text-alt text-base-content/60 whitespace-normal leading-relaxed">
+          <span className="label-text-alt text-sm mt-2 text-base-content/60 whitespace-normal leading-relaxed">
             If changed, project title and tech stack will be auto-updated.
           </span>
         </label>
@@ -87,7 +87,7 @@ export default function EditForm({ project }: EditFormProps) {
         <input
           type="url"
           placeholder="https://my-project.vercel.app"
-          className="input input-bordered w-full bg-base-100/50 focus:bg-base-100 focus:border-primary transition-all font-mono text-sm shadow-sm rounded-xl"
+          className="input input-primary input-lg w-full"
           value={demoUrl}
           onChange={(e) => setDemoUrl(e.target.value)}
         />
@@ -96,14 +96,14 @@ export default function EditForm({ project }: EditFormProps) {
       <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-end gap-3 pt-6 border-t border-base-content/10 mt-2">
         <Link
           href="/dashboard"
-          className="btn btn-ghost rounded-xl w-full sm:w-auto"
+          className="btn btn-ghost"
         >
           Cancel
         </Link>
         <button
           type="submit"
           disabled={isSubmitting || !repoUrl}
-          className="btn btn-info text-white hover:scale-[1.02] transition-all w-full sm:w-auto rounded-xl px-8"
+          className="btn btn-primary"
         >
           {isSubmitting ? (
             <>

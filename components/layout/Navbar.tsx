@@ -23,7 +23,7 @@ export default function Navbar({
   const [isMobileSearchOpen, setIsMobileSearchOpen] = useState(false);
 
   return (
-    <div className="bg-base-100/80 backdrop-blur-md sticky top-0 z-50 border-b border-base-content/10 transition-all duration-300">
+    <div className="bg-base-100/80 md:backdrop-blur-md sticky top-0 z-50 border-b border-base-content/10 transition-all duration-300">
       {/*  1. Top Row */}
       <div className="container navbar mx-auto px-4 md:px-8">
         {/* Logo Section */}
